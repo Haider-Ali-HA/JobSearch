@@ -5,9 +5,9 @@ import { BsFacebook } from "react-icons/bs";
 const Footer = () => {
   return (
     <>
-      <div className="footer p-[5rem] mb-4 bg-blue-600 rounded-[10px] gap-8 grid grid-cols-5 m-auto items-center justify-center">
-        <div>
-          <div className="logoDiv">
+      <div className="footer p-[2rem] mb-4 bg-blue-600 rounded-[10px] gap-8 flex flex-wrap m-auto items-center justify-center">
+        <div className=" w-[170px]">
+          <div className="logoDiv ">
             <h1 className="logo text-[25px] text-white pb-[1.5rem]">
               <strong>Job</strong>Search
             </h1>
@@ -17,7 +17,7 @@ const Footer = () => {
             employers find the best candidates.
           </p>
         </div>
-        <div className="grid">
+        <div className="grid  w-[150px]">
           <span className="divTitle text-[18px] font-semibold pb-[1.5rem] text-white">
             Company
           </span>
@@ -30,7 +30,7 @@ const Footer = () => {
             <li className="text-white opacity-[.7] hover-opacity-[1]">FAQ</li>
           </div>
         </div>
-        <div className="grid">
+        <div className="grid  w-[150px]">
           <span className="divTitle text-[18px] font-semibold pb-[1.5rem] text-white">
             Resources
           </span>
@@ -49,7 +49,7 @@ const Footer = () => {
             </li>
           </div>
         </div>
-        <div className="grid">
+        <div className="grid  w-[150px]">
           <span className="divTitle text-[18px] font-semibold pb-[1.5rem] text-white">
             Support
           </span>
@@ -66,7 +66,7 @@ const Footer = () => {
             </li>
           </div>
         </div>
-        <div className="grid">
+        <div className="grid  w-[150px]">
           <span className="divTitle text-[18px] font-semibold pb-[1.5rem] text-white">
             Contact Info
           </span>

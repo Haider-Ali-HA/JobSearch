@@ -46,7 +46,7 @@ const Job = () => {
           return (
             <div
               key={id}
-              className="group group/item singleJob w-[250px] p-[20px] bg-white rounded-[10px] hover:bg-blue-500 shadow-lg shadow-gray-500 hover:shadow-lg"
+              className="group singleJob w-[250px] p-[20px] bg-white rounded-[10px] hover:bg-blue-500 shadow-lg shadow-gray-500 hover:shadow-lg"
             >
               <span className="flex justify-between items-center gap-4">
                 <h1 className="text-[16px] font-semibold text-gray-700 group-hover:text-white">
@@ -66,7 +66,7 @@ const Job = () => {
                   {company}
                 </span>
               </div>
-              <button className="border-[2px] rounded-[10px] block p-[10px] w-full text-[14px] font-semibold text-gray-500 hover:bg-white group-hover/item:text-black group-hover:text-white">
+              <button className="border-[2px] rounded-[10px] block p-[10px] w-full text-[14px] font-semibold text-gray-500 hover:bg-white hover:text-white group-hover:text-black ">
                 Apply Now
               </button>
             </div>

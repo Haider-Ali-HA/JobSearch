@@ -8,7 +8,7 @@ import Footer from "./Components/Footer";
 function App() {
   return (
     <>
-    <div className="w-[85%] m-auto">
+    <div className="w-[93%] m-auto">
 
       <NavBar />
       <Search />

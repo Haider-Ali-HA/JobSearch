@@ -6,10 +6,10 @@ import { BsHouseDoor } from "react-icons/bs";
 const Search = () => {
   return (
     <>
-      <div className="searchDiv w-full h-[300px] rounded-lg bg-gray-400 flex flex-col justify-center items-center">
-        <form action="" className="flex">
-          <div className="flex  justify-between px-5 items-center shadow-lg shadow-gray-500 h-[90px] w-full bg-white rounded-lg">
-            <div className="flex items-center mx-3">
+      <div className="searchDiv w-full h-[500px] sm:h-[300px] rounded-lg bg-gray-400 flex flex-col sm:flex-row md:flex-col justify-center px-3 items-center">
+        <form action="" className="w-full sm:w-[60%] md:w-full  flex">
+          <div className="flex flex-col md:flex-row  p-5  justify-between  md:px-5 items-center shadow-lg shadow-gray-500 h-[200px] md:h-[90px] w-full bg-white rounded-lg">
+            <div className="flex  items-center mx-3 ">
               <AiOutlineSearch className="text-[25px] mx-3" />
               <input
                 type="text"
@@ -18,18 +18,18 @@ const Search = () => {
               />
               <AiOutlineCloseCircle className="text-[25px] text-gray-400 hover:text-black hover:cursor-pointer" />
             </div>
-            <div className="flex items-center mx-9">
+            <div className="flex items-center mx-3 ">
               <BsHouseDoor className="text-[25px] mx-3" />
               <input
                 type="text"
                 className="bg-transparent text-green-600 focus:outline-none w-full"
                 placeholder="Search By Company..."
               />
-              <AiOutlineCloseCircle className="text-[25px] text-gray-400 hover:text-black hover:cursor-pointer" />
+              <AiOutlineCloseCircle className="text-[25px]  text-gray-400 hover:text-black hover:cursor-pointer" />
             </div>
 
-            <div className="flex items-center mx-3">
-              <CiLocationOn className="text-[25px] mx-3" />
+            <div className="flex items-center mx-3 ">
+              <CiLocationOn className="text-[25px]  mx-3" />
               <input
                 type="text"
                 className="bg-transparent text-green-600 focus:outline-none w-full"
@@ -37,20 +37,20 @@ const Search = () => {
               />
               <AiOutlineCloseCircle className="text-[25px] text-gray-400 hover:text-black hover:cursor-pointer" />
             </div>
-            <button className="bg-green-600 p-3 w-[100px] rounded-lg mx-3 text-white">
+            <button className="bg-green-600 p-3  w-[90px] sm:w-[100px] h-[50px] sm:h-[50px] rounded-lg mx-3  text-white">
               Search
             </button>
           </div>
         </form>
-        <div className="secDiv flex items-center gap-10 mt-5 justify-center">
-          <div className="singleSearch flex items-center gap-2">
+        <div className="secDiv  flex flex-col md:flex-row items-center gap-10 mt-11 sm:mt-0 md:mt-5 justify-center">
+          <div className="singleSearch   mx-5 md:mx-0 flex items-center gap-2">
             <label htmlFor="relevance" className="text-[#0a0a0a] font-semibold">
               Sort By:
             </label>
             <select
               name=""
               id="relevance"
-              className="bg-white outline-none rounded-[3px] px-4 py-1"
+              className="bg-white outline-none w-[150px] rounded-[3px] px-4 py-1"
             >
               <option value="">Relevance</option>
               <option value="">Inclusive</option>
@@ -65,7 +65,7 @@ const Search = () => {
             <select
               name=""
               id="type"
-              className="bg-white outline-none rounded-[3px] px-4 py-1"
+              className="bg-white outline-none ml-5 md:ml-0 w-[150px] rounded-[3px] px-4 py-1"
             >
               <option value="">Full-time</option>
               <option value="">Remote</option>
@@ -80,7 +80,7 @@ const Search = () => {
             <select
               name=""
               id="level"
-              className="bg-white outline-none rounded-[3px] px-4 py-1"
+              className="bg-white outline-none w-[150px] ml-5 md:ml-0 rounded-[3px] px-4 py-1"
             >
               <option value="">Senior</option>
               <option value="">Beginner</option>
